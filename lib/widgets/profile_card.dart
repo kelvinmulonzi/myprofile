@@ -13,7 +13,7 @@ class ProfileCard extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 40,
-              backgroundImage: AssetImage('assets/images/profile.jpg'),
+
             ),
             SizedBox(width: 16.0),
             Column(
@@ -29,6 +29,12 @@ class ProfileCard extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyMedium ??
                       TextStyle(fontSize: 16.0, color: Colors.grey),
                 ),
+                Text(
+                  '5 years of experience',
+                  style: Theme.of(context).textTheme.bodyMedium ??
+                      TextStyle(fontSize: 16.0, color: Colors.grey),
+                ),
+
               ],
             ),
           ],

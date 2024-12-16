@@ -6,7 +6,7 @@ class ProfileCard extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.all(16.0),
       elevation: 4.0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Row(
@@ -20,7 +20,7 @@ class ProfileCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'John Doe',
+                  'Mutuku',
                   style: Theme.of(context).textTheme.titleLarge ??
                       TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
                 ),

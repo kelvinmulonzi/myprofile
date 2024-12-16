@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myprofile/apicalls/apicall.dart';
 import 'screens/home_screen.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyProfileApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: HomeScreen(),
+      home: ApiCall(),
     );
   }
 }

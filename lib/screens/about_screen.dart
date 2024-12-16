@@ -13,7 +13,7 @@ class AboutScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'About Me',
+              'Mutuku',
               style: Theme.of(context).textTheme.headlineSmall,
             ),
             SizedBox(height: 10),

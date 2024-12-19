@@ -9,6 +9,7 @@ class Skill {
 
 final skills = [
   Skill(icon: Icons.code, name: 'Flutter Developer'),
+  Skill(icon: Icons.web, name: 'Web Developer'),
   Skill(icon: Icons.design_services, name: 'UI/UX Designer'),
   Skill(icon: Icons.security, name: 'Cybersecurity Enthusiast'),
   Skill(icon: Icons.analytics, name: 'Data Analyst'),

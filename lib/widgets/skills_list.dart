@@ -6,13 +6,32 @@ class SkillsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
-      physics:const NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: skills.length,
       itemBuilder: (context, index) {
-        return ListTile(
-          leading: Icon(skills[index].icon),
-          title: Text(skills[index].name),
-        );
+        return SkillItem(skill: skills[index]);
+      },
+    );
+  }
+}
+
+class SkillItem extends StatefulWidget {
+  final Skill skill;
+
+  const SkillItem({Key? key, required this.skill}) : super(key: key);
+
+  @override
+  State<SkillItem> createState() => _SkillItemState();
+}
+
+class _SkillItemState extends State<SkillItem> {
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(widget.skill.icon),
+      title: Text(widget.skill.name),
+      onTap: () {
+        // Handle onTap event if needed
       },
     );
   }

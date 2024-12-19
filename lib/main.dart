@@ -16,7 +16,7 @@ class MyProfileApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: ApiCall(),
+      home: HomeScreen(),
     );
   }
 }
